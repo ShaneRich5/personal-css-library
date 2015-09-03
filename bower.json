@@ -1,0 +1,16 @@
+{
+  "name": "shadow",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ShaneRich5/personal-css-library",
+  "authors": [
+    "Shane Richards <shane.richards121@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
