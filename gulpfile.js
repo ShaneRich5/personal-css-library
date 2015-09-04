@@ -3,11 +3,12 @@ var postcss = require('gulp-postcss');
 var csswring = require('csswring')
 var sass = require('gulp-sass');
 var autoprefixer = require('autoprefixer-core');
+var cssnext = require('cssnext');
 
 gulp.task('styles', function() {
     var processors = [
-        csswring,
-        autoprefixer({browsers:['last 2 version']})
+        autoprefixer({browsers:['last 2 version']}),
+        cssnext({})
     ];
 
     return gulp.src('styles.css')
@@ -16,5 +17,5 @@ gulp.task('styles', function() {
 });
 
 gulp.task('watch:styles', function() {
-    gulp.watch('**/*.scss', ['styles']);
+    gulp.watch('**/*.css', ['styles']);
 });
